@@ -18,5 +18,5 @@ COPY . .
 RUN chown -R 1000:0 /usr/src/app
 USER 1000
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+EXPOSE 3000
+CMD [ "node", "./src/server.js" ]

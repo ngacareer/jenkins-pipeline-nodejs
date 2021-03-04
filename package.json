@@ -2,12 +2,33 @@
   "name": "nodejs_web_app",
   "version": "1.0.0",
   "description": "Example build nodejs web app by jenkins pipeline",
-  "author": "triuhv <fms@ngacareer.com>",
+  "author": "triuhv <ms@ngacareer.com>",
+  "license": "MIT",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "test": "mocha -R spec src/**/*.spec.js"    
   },
+  "keywords": [
+    "node.js",
+    "handlebars",
+    "microservices",
+    "express",
+    "Front-end"
+  ],
   "dependencies": {
-    "express": "^4.16.1"
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "handlebars-helpers": "^0.10.0",
+    "request": "^2.88.0"    
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nock": "^10.0.4",
+    "nodemon": "^1.18.9"
   }
 }

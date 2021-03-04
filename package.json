@@ -7,28 +7,21 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./src/server.js"
-    "dev": "nodemon ./src/server.js",
-    "test": "mocha -R spec src/**/*.spec.js"    
+    "dev"  : "nodemon ./src/server.js",
+    "test" : "jasmine-node spec"   
   },
   "keywords": [
-    "node.js",
-    "handlebars",
+    "node.js"
     "microservices",
-    "express",
-    "Front-end"
+    "express"
   ],
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "bootstrap": "^4.2.1",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "font-awesome": "^4.7.0",
-    "handlebars-helpers": "^0.10.0",
-    "request": "^2.88.0"    
+    "request": "^2.88.0"
+    "jasmine-node": "^1.14.5"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "nock": "^10.0.4",
     "nodemon": "^1.18.9"
   }
 }

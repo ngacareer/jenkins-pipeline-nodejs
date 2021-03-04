@@ -1,0 +1,13 @@
+{
+  "name": "nodejs_web_app",
+  "version": "1.0.0",
+  "description": "Example build nodejs web app by jenkins pipeline",
+  "author": "triuhv <fms@ngacareer.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
